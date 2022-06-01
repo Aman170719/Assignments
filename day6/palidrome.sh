@@ -6,14 +6,14 @@ echo "Enter the 2nd Number"
 read num2
 
 sum=0
-reminder=0
+remainder=0
 
 function palindrome()
 {
 while [ $num1 -gt 0 ]
 do
-	reminder=$(($num1%10))
-	sum=$((($sum*10)+$reminder))
+	remainder=$(($num1 % 10))
+	sum=$((($sum*10)+ $remainder))
 	num1=$(($num1/10))
  done
 	if [ $num2 -eq $sum ]
