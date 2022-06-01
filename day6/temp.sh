@@ -1,16 +1,16 @@
 #!/bin/bash
 function degF_to_degC(){
-if [[ ($1 -ge 32 && $1 -le 212) ]]
+if [[ ($a -ge 32 && $a -le 212) ]]
 then
-degC=`echo "scale=2;($1-32.0)*5/9" | bc`
+degC= `echo "scale=2;($a-32.0)*5/9" | bc`
 else
 echo "exceeding limit"
 fi
 }
 function degC_to_degF(){
-if [[ ($1 -ge 0 && $1 -le 100) ]]
+if [[ ($a -ge 0 && $a -le 100) ]]
 then
-degF=`echo "scale=2;($1*9.0/5)+32" | bc`
+degF= `echo "scale=2;($a*9.0/5)+32" | bc`
 else
 echo "exceeding limits"
 fi
