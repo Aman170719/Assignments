@@ -11,7 +11,7 @@ case $user in
 			;;
 	2)
 		echo "Employee is part  time"
-		part_time_hour=8
+		part_time_hour=4
 		wage=$((wage_per_hour*part_time_hour))
 		echo "part time wage of employee is $wage"
 			;;
