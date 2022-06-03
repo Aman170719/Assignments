@@ -39,8 +39,8 @@ then
 fi
 done
 
+echo "second smallest $sec_small"
+echo "second largest $sec_large"
 
-echo "second large $sec_large"
-echo "second small $sec_small"
 
 
